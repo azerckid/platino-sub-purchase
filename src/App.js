@@ -49,7 +49,7 @@ const MainPic = styled.div`
     font-size: 50px;
     font-weight: 800;
     color: white;
- 
+  }
 `;
 
 function App() {
