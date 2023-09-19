@@ -6,6 +6,14 @@ const FooterContainer = styled.div`
   margin-top: 100px;
   border-top: 1px solid #e5e5e5;
   color: #8e8e8e;
+  @media (max-width: 1024px) {
+    width: 90vw;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 12px;
+  }
   div:nth-child(1) {
     margin-top: 8px;
     margin-bottom: 16px;
@@ -14,7 +22,7 @@ const FooterContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     div:nth-child(1) {
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 600;
     }
     div:nth-child(2) {
@@ -25,6 +33,9 @@ const FooterContainer = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
     div:nth-child(1) {
     }
     div:nth-child(2) {
@@ -36,6 +47,9 @@ const FooterContainer = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
     div:nth-child(1) {
     }
     div:nth-child(2) {
@@ -48,6 +62,14 @@ const FooterContainer = styled.div`
   div:nth-child(4) {
     margin-top: 20px;
     margin-bottom: 50px;
+    @media (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
 `;
 

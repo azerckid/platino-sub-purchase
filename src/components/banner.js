@@ -11,6 +11,17 @@ const BannerContainer = styled.div`
   font-weight: 700;
   color: #fff;
   background-color: dodgerblue;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    height: 150px;
+    font-size: 20px;
+  }
+  h1 {
+    @media (max-width: 1024px) {
+      width: 50%;
+      font-size: 20px;
+    }
+  }
 `;
 
 const Banner = () => {

@@ -6,6 +6,13 @@ import servicePic_02 from "../assets/img/serviceIllust_02.jpg";
 
 const ServiceContainer = styled.div`
   width: 1280px;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const ServiceTitle = styled.div`
   width: 100%;
@@ -17,6 +24,9 @@ const ServiceTitle = styled.div`
     font-size: 35px;
     font-weight: 800;
     text-align: center;
+    @media (max-width: 1024px) {
+      font-size: 25px;
+    }
   }
 `;
 const ServiceContentBox = styled.div`
@@ -26,6 +36,10 @@ const ServiceContentBox = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1024px) {
+    height: 100%;
+    flex-direction: column;
+  }
 `;
 const ServiceContentItem = styled.div`
   width: 640px;
@@ -34,6 +48,10 @@ const ServiceContentItem = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    height: 100%;
+  }
 `;
 const ServiceContentItemPic = styled.div`
   width: 640px;
@@ -41,19 +59,31 @@ const ServiceContentItemPic = styled.div`
   background-image: url(${(props) => props.pic});
   background-size: cover;
   background-position: center;
+  @media (max-width: 1024px) {
+    width: 300px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 `;
 const ServiceContentItemText = styled.div`
-  padding: 0 60px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  @media (max-width: 1024px) {
+    width: 80vw;
+    align-items: center;
+  }
 
   div:nth-child(1) {
+    width: 100%;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 60px;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
   }
   div:nth-child(2) {
     padding-right: 50px;
@@ -61,12 +91,18 @@ const ServiceContentItemText = styled.div`
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 40px;
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
   }
   div:nth-child(3) {
     padding-right: 20px;
     font-size: 24px;
     font-weight: 400;
     line-height: 1.5;
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
   }
 `;
 

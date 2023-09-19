@@ -12,6 +12,13 @@ import processPic_08 from "../assets/img/processPic_08.png";
 
 const ProcessContainer = styled.div`
   width: 1280px;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const ProcessTitle = styled.div`
   width: 100%;
@@ -32,6 +39,11 @@ const ProcessContentBox = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+  }
 `;
 const ProcessContentItem = styled.div`
   width: 250px;
@@ -74,6 +86,10 @@ const ProcessArrowBox = styled.div`
   align-items: center;
   font-size: 30px;
   color: #5e76ff;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    height: 10%;
+  }
 `;
 const ProcessNoticeBox = styled.div`
   display: flex;
@@ -87,8 +103,16 @@ const ProcessNoticeBox = styled.div`
   line-height: 1.5;
   color: #5e76ff;
   div:nth-child(1) {
+    @media (max-width: 1024px) {
+      width: 80vw;
+      font-size: 16px;
+    }
   }
   div:nth-child(2) {
+    @media (max-width: 1024px) {
+      width: 80vw;
+      font-size: 16px;
+    }
   }
 `;
 

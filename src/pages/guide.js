@@ -10,6 +10,13 @@ import guidePic_06 from "../assets/img/guidePic_06.png";
 
 const GuideContainer = styled.div`
   width: 1280px;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const GuideTitle = styled.div`
   width: 100%;
@@ -21,6 +28,9 @@ const GuideTitle = styled.div`
     font-size: 35px;
     font-weight: 800;
     text-align: center;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
   }
 `;
 const GuideContentBox = styled.div`
@@ -30,6 +40,11 @@ const GuideContentBox = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  @media (max-width: 1024px) {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const GuideContentItem = styled.div`
   width: 380px;
@@ -38,6 +53,11 @@ const GuideContentItem = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    height: 100%;
+    margin-bottom: 20px;
+  }
 `;
 const GuideContentItemPic = styled.div`
   width: 350px;
@@ -46,9 +66,12 @@ const GuideContentItemPic = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
   border-radius: 10px;
   background-color: #5e76ff;
+  @media (max-width: 1024px) {
+    width: 80vw;
+    height: 140px;
+  }
   div:nth-child(1) {
     width: 100px;
     height: 100px;
@@ -56,6 +79,10 @@ const GuideContentItemPic = styled.div`
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    @media (max-width: 1024px) {
+      width: 80px;
+      height: 80px;
+    }
   }
   div:nth-child(2) {
     width: 100px;
@@ -64,6 +91,10 @@ const GuideContentItemPic = styled.div`
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    @media (max-width: 1024px) {
+      width: 80px;
+      height: 80px;
+    }
   }
 `;
 const GuideContentItemTitle = styled.div`
@@ -75,6 +106,11 @@ const GuideContentItemTitle = styled.div`
 const GuideContentItemText = styled.div`
   font-size: 16px;
   font-weight: 400;
+  @media (max-width: 1024px) {
+    width: 80vw;
+    text-align: center;
+    }
+    }
 `;
 
 const Guide = () => {

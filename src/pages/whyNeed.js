@@ -7,40 +7,59 @@ import pic_03 from "../assets/img/whyIllust_03.jpg";
 
 const WhyNeedContainer = styled.div`
   width: 1280px;
-  height: 1080px;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const WhyNeedQuestion = styled.div`
-  width: 100%;
   height: 254px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1024px) {
+    height: 60px;
+  }
   h1 {
     font-size: 35px;
     font-weight: 600;
     text-align: center;
+    @media (max-width: 1024px) {
+      font-size: 25px;
+    }
   }
 `;
 const WhyNeedAnswer = styled.div``;
 const WhyNeedAnswerSolution = styled.div`
   width: 100%;
-  height: 156px;
   display: flex;
   justify-content: center;
   align-items: center;
   h1 {
-    font-size: 25px;
+    width: 80%;
+    height: 100px;
+    font-size: 20px;
     font-weight: 400;
     text-align: center;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 1.3;
+    }
   }
 `;
 const WhyNeedAnswerSolutionItemBox = styled.div`
   width: 100%;
-  height: 672px;
+  /* height: 672px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 const WhyNeedAnswerSolutionItem = styled.div`
   width: 426px;
@@ -49,6 +68,11 @@ const WhyNeedAnswerSolutionItem = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+  }
 `;
 const WhyNeedAnswerSolutionItemPic = styled.div`
   width: 309px;
@@ -57,6 +81,10 @@ const WhyNeedAnswerSolutionItemPic = styled.div`
   background-image: url(${(props) => props.pic});
   background-size: cover;
   background-position: center;
+  @media (max-width: 1024px) {
+    width: 240px;
+    height: 240px;
+  }
 `;
 const WhyNeedAnswerSolutionItemTitle = styled.div`
   width: 100%;
@@ -67,6 +95,11 @@ const WhyNeedAnswerSolutionItemTitle = styled.div`
   align-items: center;
   font-size: 25px;
   font-weight: 600;
+  @media (max-width: 1024px) {
+    height: 50px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
 `;
 const WhyNeedAnswerSolutionItemContent = styled.div`
   width: 65%;
@@ -76,6 +109,10 @@ const WhyNeedAnswerSolutionItemContent = styled.div`
   align-items: center;
   font-size: 18px;
   line-height: 1.5;
+  @media (max-width: 1024px) {
+    width: 58%;
+    font-size: 16px;
+  }
 `;
 
 const WhyNeed = () => {

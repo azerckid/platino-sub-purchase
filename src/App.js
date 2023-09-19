@@ -15,6 +15,9 @@ const AppContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1024px) {
+    width: 100vw;
+  }
 `;
 const MainPic = styled.div`
   width: 100vw;
@@ -23,6 +26,11 @@ const MainPic = styled.div`
   background-image: url(${mainPic});
   background-size: cover;
   background-position: center;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+  }
   div:nth-child(1) {
     position: absolute;
     top: 10%;
@@ -31,15 +39,23 @@ const MainPic = styled.div`
     font-size: 40px;
     font-weight: 800;
     color: white;
+    @media (max-width: 1024px) {
+      font-size: 28px;
+    }
   }
+
   div:nth-child(2) {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 200;
     color: white;
+    @media (max-width: 1024px) {
+      width: 80%;
+      font-size: 26px;
+    }
   }
   div:nth-child(3) {
     position: absolute;
@@ -49,6 +65,12 @@ const MainPic = styled.div`
     font-size: 50px;
     font-weight: 800;
     color: white;
+    @media (max-width: 1024px) {
+      width: 90%;
+      top: 60%;
+      font-size: 34px;
+      font-weight: 600;
+    }
   }
 `;
 

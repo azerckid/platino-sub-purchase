@@ -55,6 +55,9 @@ table {
 body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
+  @media (max-width: 1024px) {
+	width: 100vw;
+  }
 }
 `;
 
